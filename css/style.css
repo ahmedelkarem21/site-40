@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Tilt+Neon&display=swap');
+
+:root {
+   --color_one: #ec5c60;
+   --color_two: #43413e;
+   --color_three: #262222;
+   --overlay_color: #ededed;
+   --text_five: #e6e5f0 ;
+   --bg-sections: #0a0115;
+   --overlay_color: #302624df;
+}
+
+
+* {
+   font-family: 'Roboto', sans-serif;
+   line-height: 1.2;
+   box-sizing: border-box;
+   /* border: solid; */
+}
+
+.uppercase {
+   text-transform: uppercase;
+}
+
+.capitalize {
+   text-transform: capitalize;
+}
+
+a {
+   transition: all 0.2s;
+}
+
+a:hover,
+i:hover {
+   color: var(--color_one)!important;
+   cursor: pointer;
+   transform: scale(1.1);
+}
+
+.color_one {
+   color: var(--color_one);
+}
+
+.color_oneBg {
+   background-color: var(--color_one);
+}
+
+.bg_sections{
+   background-color: var(--bg-sections);
+}
+
+.bg_three{
+   background-color: var(--color_three);
+}
+
+.color_two {
+   color: var(--color_three);
+}
+
+h1,h2,h3,h4,h5,h6 {
+   text-transform: capitalize;
+   color: white;
+}
+
+button {
+   text-transform: capitalize;
+   background-color: var(--color_one);
+   color: white;
+   width: 150px;
+   height: 40px;
+   border: none;
+   border-radius: 0%;
+   transition: all 0.2s;
+}
+
+button:hover {
+   transform: scale(1.1);
+   background-color: #26222200!important;
+   color: var(--color_one);
+   border: solid var(--color_one) 1px;
+}
+
+/* main styles */
+
+main {
+   background-image: url(../images/banner.png);
+   background-size: cover;
+   min-height: 100vh  ;
+}
+
+main .left {
+   text-align: center!important;
+}
+
+.running_shoes {
+   padding-top: 5%;
+}
+
+.mens_like {
+   margin-inline-start: 15%;
+}
+
+.new_collection {
+   padding: 5% 0;
+}
+
+.new_collection .sectorOne {
+   position: relative;
+   left: 100px;
+   z-index: 1;
+   border: none;
+   transition: all 0.2s;
+   /* box-shadow: var(--text_five)  1px 2px 10px 1px; */
+}
+
+.new_collection p {
+   padding-top: 2%;
+   padding-bottom: 0;
+   margin-bottom: 0;
+}
+
+.new_collection .my_text {
+   position: relative;
+   left: 40%;
+   bottom: 24%;
+   width: 30%;
+}
+
+.my_text h5 {
+   font-weight: 400;
+   text-decoration: underline;
+}
+
+.new_collection .sectorTwo {
+   position: relative;
+   right: 50px;
+   top: 100px;
+   transition: all 0.2s;
+   justify-content: center;
+}
+
+/* .overlay {
+   width: max-content;
+   background-image: linear-gradient(var(--overlay_color), var(--overlay_color)), url(../images/about-img1.png);
+}
+
+.hiden {
+   visibility: hidden;
+} */
+
+.new_collection .sectorTwo:hover,
+.new_collection .sectorOne:hover {
+   transform: scale(1.02);
+   cursor: pointer;
+   z-index: 2;
+}
+
+.new_collection .new {
+   width: 100px;
+   height: 40px;
+   background-color: #262222;
+   color: white;
+   text-align: center;
+   position: relative;
+   left: 65px;
+   top: 70px;
+   z-index: 2;
+}
+
+.racing_boots .xx {
+   position: relative;
+   padding-bottom: 5%;
+}
+
+.racing_boots .xxx {
+   position: absolute;
+   left: 75%;
+   top: 25%;
+}
+
+.new_arrivals{
+   background-color: #ec5c60;
+}
+
+.new_arrivals .my_span {
+   margin-top: 20%;
+}
+
+.x{
+   transition: all 0.1s;
+   border: solid var(--color_one) 15px;
+   border-radius: 25px;
+}
+
+.x:hover {
+   transform: scale(1.02);
+   cursor: pointer;
+}
+
+.x_but:hover {
+ border: var(--color_three) solid 1px;
+ color: var(--color_three);
+}
+
+.contact_now {
+   padding-inline-start: 7%;
+}
+
+.sectorx {
+   margin-inline-start: 1%;
+}
+
+/* .xx_button {
+   margin-inline-start: auto;
+} */
+
+/* ********************** */
+
+.my_link {
+   color: var(--color_three)!important;
+}
+
+.loading {
+   width: 2rem;
+   height: 2rem;
+   border: 5px solid var(--bg-sections);
+   border-top: 6px solid #f3f3f3;
+   border-radius: 100%;
+   margin: auto;
+   animation: spin 1s infinite linear;
+}
+
+.loading_off{
+   visibility: hidden!important;
+}
+
+@keyframes spin {
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+
+
+
+@media (max-width:1200px) {
+
+   .new_collection {
+      padding: 15% 0% ;
+   }
+
+   .new_collection .sectorOne{
+      position: static;
+      z-index: 0;
+      padding-bottom: 0%;
+   }
+
+   .new_collection .sectorTwo {
+      position: static;
+      z-index: 0;
+   }
+
+   .new_collection .my_text {
+      position: static;
+      text-align: center;
+      margin: auto;
+      /* left: 40%;
+      bottom: 24%;
+      width: 30%; */
+   }
+
+   .new_collection .new {
+      left: 20px;
+   }
+
+   .contact_now {
+      padding: 5% 0;
+      margin: 0 3%;
+   }
+   
+   .sectorx {
+      margin: 5% 0;
+   }
+
+}
+
+@media (max-width:1000px) {
+
+   .mens_like {
+      margin-inline-start: 0%;
+   }
+
+   .racing_boots .xxx {
+      position: initial;
+      text-align: center;
+      width: 100% !important;
+      padding: 5% 0;
+      /* left: 75%;
+      top: 25%; */
+   }
+
+   .racing_boots .xxx h2 {
+      color: var(--color_three);
+   }
+
+}
